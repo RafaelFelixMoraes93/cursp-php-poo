@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Aula 02 - POO</title>
+        <title>Metodos Acessores - POO</title>
     </head>
     <body>
         <pre>
