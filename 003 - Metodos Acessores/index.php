@@ -8,12 +8,16 @@
         <pre>
         <?php
             require_once 'Caneta.php';
-            $c1 = new Caneta();
+            $c1 = new Caneta("Bic", "Azul", 0.5);   
+            $c2 = new Caneta("Bic", "Preta", 0.5);
             //$c1->setModelo("Bic");
-            $c1->modelo = "Bic";//pode ser feito por ser publico
-            $c1->setPonta("0.5");
-            //$c1->ponta = "0.5"; não pode ser feito, pois esta como privado
-            echo "Eu tenho uma caneta {$c1->getModelo()} de ponta{$c1->getPonta()}.";
+            //$c1->modelo = "Bic";//pode ser feito por ser publico
+            //$c1->setPonta("0.5");
+            
+            echo '<p>Primera Caneta</p>';
+            print_r($c1);
+            echo '<p>Segunda Caneta</p>';
+            print_r($c2);
         ?>
         </pre>
     </body>
