@@ -24,6 +24,9 @@
             echo '<p><strong>Objeto Televisão</strong></p>';
             print_r($televisao);
             
+            require_once 'Onibus.php';
+            $onibus = new Onibus("Mercedes Benz", "Padron eO500U", 2025, 0);
+            print_r($onibus);
         ?>
         </pre>
     </body>
