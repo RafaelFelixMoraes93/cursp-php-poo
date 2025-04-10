@@ -34,6 +34,12 @@
             echo '<p><strong>Objeto Caixa de Som</strong></p>';
             $caixadesom->aumentarVolume();
             print_r($caixadesom);
+            
+            require_once 'Cachorro.php';
+            $cachorro = new Cachorro("Vira Lata", "Marrom", "Zeus", 5);
+            echo '<p><strong>Objeto Cachorro</strong></p>';
+            print_r($cachorro);
+            $cachorro->emitirSom();
         ?>
         </pre>
     </body>
