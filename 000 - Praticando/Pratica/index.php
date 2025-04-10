@@ -26,7 +26,14 @@
             
             require_once 'Onibus.php';
             $onibus = new Onibus("Mercedes Benz", "Padron eO500U", 2025, 0);
+            echo '<p><strong>Objeto Onibus</strong></p>';
             print_r($onibus);
+            
+            require_once 'CaixaDeSom.php';
+            $caixadesom =new CaixaDeSom("Phillips", "D577f", "Preto", 0);
+            echo '<p><strong>Objeto Caixa de Som</strong></p>';
+            $caixadesom->aumentarVolume();
+            print_r($caixadesom);
         ?>
         </pre>
     </body>
