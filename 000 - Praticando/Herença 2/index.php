@@ -17,7 +17,7 @@
             $mago->exebirFicha();
             
             echo "<h1>Mago Mestre</h1>";
-            $magomestre = new MagoMestre("Merlin", 100, 200);
+            $magomestre = $mago->evoluir();
             $magomestre->exebirFicha();
         ?>
     </body>

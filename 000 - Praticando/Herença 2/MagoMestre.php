@@ -4,11 +4,10 @@ require_once 'Mago.php';
 class MagoMestre extends Mago implements SerInterface{
     private $tempestadodefogo;
     
-   #[\Override]
-   public function __construct() {
-        $this->setNome("Merlin");
-        $this->setVida(100);
-        $this->setMana(200);
+     public function __construct($nome, $vida, $mana) {
+        $this->setNome($nome);
+        $this->setVida($vida);
+        $this->setMana($mana);
         $this->setVocacao("Mago Mestre");
     }
     

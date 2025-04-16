@@ -26,6 +26,11 @@ class Mago extends Ser implements SerInterface{
         $this->boladefogo = $boladefogo;
     }
     
+    public function evoluir(): MagoMestre {
+        return new MagoMestre($this->getNome(), $this->getVida(), $this->getMana());
+    }
+
+
     
     #[\Override]
     public function exebirFicha() {
