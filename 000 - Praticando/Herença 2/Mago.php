@@ -27,7 +27,7 @@ class Mago extends Ser implements SerInterface{
     }
     
     public function evoluir(): MagoMestre {
-        return new MagoMestre($this->getNome(), $this->getVida(), $this->getMana());
+        return new MagoMestre($this->getNome(), $this->getVida()+50, $this->getMana()+200);
     }
 
 
