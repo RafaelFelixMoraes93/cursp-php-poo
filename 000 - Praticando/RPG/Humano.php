@@ -3,10 +3,48 @@
 abstract class Humano {
     protected $nome;
     protected $vida;
+    protected $vidamaxima;
     protected $mana;
+    protected $manamaxima;
+    protected $ataque;
+    protected $defesa;
     protected $sexo;
     
+    public function getAtaque() {
+        return $this->ataque;
+    }
+
+    public function getDefesa() {
+        return $this->defesa;
+    }
+
+    public function setAtaque($ataque): void {
+        $this->ataque = $ataque;
+    }
+
+    public function setDefesa($defesa): void {
+        $this->defesa = $defesa;
+    }
+
+        
+    public function getManamaxima() {
+        return $this->manamaxima;
+    }
+
+    public function setManamaxima($manamaxima): void {
+        $this->manamaxima = $manamaxima;
+    }
+
     
+    public function getVidamaxima() {
+        return $this->vidamaxima;
+    }
+
+    public function setVidamaxima($vidamaxima): void {
+        $this->vidamaxima = $vidamaxima;
+    }
+
+        
     public function getSexo() {
         return $this->sexo;
     }
