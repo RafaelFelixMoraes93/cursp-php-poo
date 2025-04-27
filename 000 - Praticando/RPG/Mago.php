@@ -6,7 +6,11 @@ class Mago extends Humano implements FuncoesInterface {
         $this->nome = $nome;
         $this->sexo = $sexo;
         $this->vida = 50;
+        $this->vidamaxima = 50;
         $this->mana = 100;
+        $this->manamaxima = 100;
+        $this->ataque = 2;
+        $this->defesa = 2;
     }
     
     #[\Override]
@@ -23,7 +27,7 @@ class Mago extends Humano implements FuncoesInterface {
     public function exibirFicha() {
         echo "Nome: {$this->nome}<br>";
         echo "Sexo: {$this->sexo}<br>";
-        echo "Vida: {$this->vida}<br>";
-        echo "Mana: {$this->mana}<br>";
+        echo "Vida: {$this->vida}/{$this->vidamaxima}<br>";
+        echo "Mana: {$this->mana}/{$this->manamaxima}<br>";
     }
 }
